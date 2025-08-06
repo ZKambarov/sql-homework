@@ -111,12 +111,12 @@ VALUES
 
 Task 9. Restore AdventureWorksDW2022.bak file to your server. (write its steps to submit) You can find the database from this link :https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2022.bak
 I would restore the AdventureWorksDW2022.bak file to my SQL Server using the following steps:
-1.	Open SSMS and connect to the server.
-2.	Copy the .bak file (from the link https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2022.bak) to the default backup folder or to an any accessible folder.
-3.	Use the Restore Database dialog from the Databases context menu.
-4.	Select the .bak file from the folder where it was copied.
-5.	Verify the destination and file paths in the Options tab.
-6.	Click OK to restore.
+-Open SSMS and connect to the server.
+-Copy the .bak file (from the link https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2022.bak) to the default backup folder or to an any accessible folder.
+-Use the Restore Database dialog from the Databases context menu.
+-Select the .bak file from the folder where it was copied.
+-Verify the destination and file paths in the Options tab.
+-Click OK to restore.
 
 
 
