@@ -25,28 +25,6 @@ INSERT INTO #Sales (CustomerName, Product, Quantity, Price, SaleDate) VALUES
 ('Isaac', 'Laptop', 1, 1250.00, '2024-05-15'),
 ('Jack', 'Smartphone', 1, 820.00, '2024-06-01');
 
-CREATE TABLE #Sales (
-    SaleID INT PRIMARY KEY IDENTITY(1,1),
-    CustomerName VARCHAR(100),
-    Product VARCHAR(100),
-    Quantity INT,
-    Price DECIMAL(10,2),
-    SaleDate DATE
-);
-
-
-INSERT INTO #Sales (CustomerName, Product, Quantity, Price, SaleDate) VALUES
-('Alice', 'Laptop', 1, 1200.00, '2024-01-15'),
-('Bob', 'Smartphone', 2, 800.00, '2024-02-10'),
-('Charlie', 'Tablet', 1, 500.00, '2024-02-20'),
-('David', 'Laptop', 1, 1300.00, '2024-03-05'),
-('Eve', 'Smartphone', 3, 750.00, '2024-03-12'),
-('Frank', 'Headphones', 2, 100.00, '2024-04-08'),
-('Grace', 'Smartwatch', 1, 300.00, '2024-04-25'),
-('Hannah', 'Tablet', 2, 480.00, '2024-05-05'),
-('Isaac', 'Laptop', 1, 1250.00, '2024-05-15'),
-('Jack', 'Smartphone', 1, 820.00, '2024-06-01');
-
 --1. Find customers who purchased at least one item in March 2024 using EXISTS
 SELECT DISTINCT s1.CustomerName
 FROM #Sales s1
@@ -515,4 +493,3 @@ FROM Products p
 JOIN Orders o ON p.ProductID = o.ProductID
 GROUP BY p.ProductID, p.Name
 ORDER BY TotalQuantity DESC;
-
